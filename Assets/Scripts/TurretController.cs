@@ -69,7 +69,6 @@ public class TurretController : MonoBehaviour
         Rigidbody rb = laser.GetComponent<Rigidbody>();
         if (rb != null)
         {
-            // Değişiklik: linearVelocity yerine velocity kullanıyoruz
             rb.linearVelocity = firePoint.forward * laserSpeed;
         }
 
